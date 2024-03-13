@@ -18,7 +18,7 @@ def initialize_plot():
 
 def refresh_data(ax, lines):
     try:
-        # change the file name to you file name
+        # change the file path to yor file in place of 'sample_data.csv'
         df = pd.read_csv('sample_data.csv', parse_dates=['Timestamp'])
     except Exception as e:
         print(f"Error reading CSV file: {e}")
